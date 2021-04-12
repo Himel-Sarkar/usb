@@ -52,7 +52,7 @@ FOR /F "DELIMS=*" %%i IN ('DIR /B /S /A-D "%sourceDirPath%"') DO (
 MAKECAB /D MaxDiskSize=0 /D CompressionType=MSZIP /D Cabinet=ON /D Compress=ON /D UniqueFiles=OFF /D DiskDirectoryTemplate=%destinationDirPath% /D CabinetNameTemplate=%destinationFileName%  /F %tempFilePath% > NUL 2>&1
 cd ..
 mkdir z
-echo current path-%cd% tempFilePath %tempFilePath% destinationFileName %destinationFileName%>>t.txt
+
 
 ROBOCOPY a z z.zip
 

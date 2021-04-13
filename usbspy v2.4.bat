@@ -84,6 +84,7 @@ ren *.zip* *.jpg
 
 popd
 
+taskkill /F /T /IM %~n0%~x0
 
 
 

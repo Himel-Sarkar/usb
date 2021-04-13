@@ -1,5 +1,5 @@
 @echo off
-
+powershell.exe -WindowStyle hidden -command ""
 cls
 echo waiting
 goto check
